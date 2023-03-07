@@ -1,8 +1,8 @@
 {
-    "name": "x_template",
+    "name": "impossible_boss",
     "description": "a ts-react template for dota2 modding, together with some helper scripts",
-    "license": "MIT",
-    "repository": "https://github.com/XavierCHN/x-template",
+    "license": "Fiiances",
+    "repository": "https://github.com/iceadfire/Impossible-boss",
     "scripts": {
         "lint": "eslint --ext .js,.ts,.tsx --quiet --fix \"./content/panorama/src/**/*.{js,ts,tsx}\" \"./game/scripts/src/**/*.{js,ts,tsx}\" \"./scripts/**/*.{js,ts,tsx}\" \"./shared/**/*.{js,ts,tsx}\" ",
         "postinstall": "node scripts/install.js",

@@ -1,5 +1,43 @@
-#base "abilities.txt"
-
 "DOTAAbilities"
 {
+	//=================================================================================================================
+	// Ability: Fire Ball 火球术
+	//=================================================================================================================
+	"fire_ball"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"AbilityTextureName"			"dragon_knight/dk_persona/dragon_knight_fireball_persona1"
+		"ScriptFile"					"abilities/hero/fire_mage/fire_ball"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_Lina.DragonSlave"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1075"
+		"AbilityCastPoint"				"0.45"
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDuration"				"0.6875"
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"100 115 130 145"
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"AbilityDamage"				"60"
+			"AbilityCooldown"				
+			{
+				"value"					"3"
+				"special_bonus_unique_lina_1"		"-3.5"
+			}
+		}
+	}
 }
